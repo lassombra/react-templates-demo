@@ -1,0 +1,19 @@
+<!-- name="appRender" -->
+<div>
+    <Navbar></Navbar>
+    <div className="container-fluid">
+        <Intro></Intro>
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>What is this?</h1>
+                <p>This is a demonstration of how react templates work.  On this page so far are examples of nested
+                templates, as well as behaviors.  The individual todo items are implemented as JSX to show that interop
+                is not only possible, it's the norm.  Other than that, every bit of dom here is drawn by React, but
+                uses templates.  The syntax is very simple, and has built in loops and such.  I will be adding more to
+                this application soon, so keep an eye out.  Sometime soon I'll create an opportunity on here to be
+                notified of changes.</p>
+            </div>
+        </div>
+        <ToDo></ToDo>
+    </div>
+</div>

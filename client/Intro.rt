@@ -1,0 +1,8 @@
+<!-- name="intro-render" -->
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Welcome to Meteor!</h1>
+        <button onClick="{this.click}">Click Me!</button>
+        <p>You've clicked the button {this.state.clicks} times!</p>
+    </div>
+</div>

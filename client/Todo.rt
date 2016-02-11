@@ -1,0 +1,19 @@
+<!-- name="todo-render" -->
+<div class="row">
+    <div class="col-xs-12">
+        <header>
+            <h1>Todo List</h1>
+            <h3>Uses rt-repeat and Meteor data mixin</h3>
+        </header>
+        <form onSubmit={this.newTask} class="form-inline">
+            <div class="input-group">
+                <input class="form-control" placeholder="new task" type="text" ref="textInput">
+                <a class="input-group-addon" href="#" onClick={this.newTask}><i class="fa fa-plus"></i></a>
+            </div>
+        </form>
+        <ul class="list-group">
+            <!-- Effectively Task for each task in this.getTasks() -->
+            <Task rt-repeat="task in this.data.tasks" key="{task._id}" task="{task}" clear="{this.remove}"/>
+        </ul>
+    </div>
+</div>
