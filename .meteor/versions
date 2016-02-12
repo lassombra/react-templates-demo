@@ -36,6 +36,7 @@ id-map@1.0.4
 insecure@1.0.4
 jquery@1.11.4
 jsx@0.2.3
+kenlimmj:hljs@1.0.4
 lassombra:react-templates@0.0.3
 lassombra:react-templates-compiler@0.0.4
 launch-screen@1.0.4

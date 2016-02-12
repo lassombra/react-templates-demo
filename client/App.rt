@@ -2,7 +2,9 @@
 <div>
     <Navbar></Navbar>
     <div className="container-fluid">
-        <Intro></Intro>
+        <CodeShow component="Intro">
+            <Intro></Intro>
+        </CodeShow>
         <div class="row">
             <div class="col-xs-12">
                 <h1>What is this?</h1>
@@ -14,6 +16,8 @@
                 notified of changes.</p>
             </div>
         </div>
-        <ToDo></ToDo>
+        <CodeShow component="ToDo">
+            <ToDo></ToDo>
+        </CodeShow>
     </div>
 </div>

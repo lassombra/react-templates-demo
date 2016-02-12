@@ -1,0 +1,17 @@
+<!-- name="codeRender" -->
+<div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="{this.class('working')}"><a href="#" onClick="(event) => {this.select('working'); event.preventDefault();}">Working</a></li>
+        <li role="presentation" class="{this.class('template')}"><a href="#" onClick="(event) => {this.select('template'); event.preventDefault();}">Template</a></li>
+        <li role="presentation" class="{this.class('compiled')}"><a href="#" onClick="(event) => {this.select('compiled'); event.preventDefault();}">Compiled</a></li>
+        <li role="presentation" class="{this.class('jsx')}"><a href="#" onClick="(event) => {this.select('jsx'); event.preventDefault();}">JSX</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane {this.class('working')}" id="working">{this.props.children}</div>
+        <div role="tabpanel" class="tab-pane {this.class('template')}" id="template"><pre ref="template">{this.template()}</pre></div>
+        <div role="tabpanel" class="tab-pane {this.class('compiled')}" id="compiled"><pre ref="compiled">{this.compiled()}</pre></div>
+        <div role="tabpanel" class="tab-pane {this.class('jsx')}" id="jsx"><pre ref="jsx">{this.jsx()}</pre></div>
+    </div>
+</div>
